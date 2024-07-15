@@ -8,9 +8,8 @@
     "pretest": "npm run build",
     "test": "node --test -r source-map-support/register build",
     "lint": "eslint src",
-    "ci": "npm run test && npm run lint",
-    "format": "prettier -w src package.json tsconfig.json",
-    "fixtures:pbjs": "pbjs -t static-module -w commonjs --root=testroot-deadbeef --keep-case -o tmp/fixtures.js  "
+    "ci": "npm run lint && npm run test",
+    "format": "prettier -w src package.json tsconfig.json"
   },
   "author": "Oleg Dashevskii",
   "license": "ISC",
