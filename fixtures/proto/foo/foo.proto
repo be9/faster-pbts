@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+import "bar/baz/boo.proto";
+
+package foo;
+
+message Foo {
+  string s = 1;
+  bool b = 2;
+  int32 i32 = 3;
+  double d = 4;
+  float f = 5;
+  int64 i64 = 6;
+  uint32 ui32 = 7;
+  uint64 ui64 = 8;
+  sint32 si32 = 9;
+  sint64 si64 = 10;
+  fixed32 f32 = 11;
+  fixed64 f64 = 12;
+  sfixed32 sf32 = 13;
+  sfixed64 sf64 = 14;
+  bytes by = 15;
+
+  DeeperNested nested = 16;
+  repeated DeeperNested nested_array = 17;
+  map<string, DeeperNested> nested_map = 18;
+  map<string, int64> map_string_int64 = 19;
+  map<int32, string> map_int32_string = 20;
+  map<uint64, E> map_uint64_e = 25;
+  repeated string string_array = 21;
+
+  oneof nested_oneof {
+    string oneof_regular = 22;
+    DeeperNested oneof_nested = 23;
+  }
+
+  E e = 24;
+
+  message DeeperNested {
+    message Nested {
+      string s = 1;
+    }
+    string s = 1;
+    Nested deeper = 2;
+  }
+
+  bar.baz.boo.GetRequest boo = 26;
+}
+
+enum E {
+  E_UNKNOWN = 0;
+  E_KNOWN = 1;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+message RootMessage {}
+
+enum RootEnum {
+  ROOT_ENUM_UNKNOWN = 0;
+  ROOT_ENUM_KNOWN = 1;
+}

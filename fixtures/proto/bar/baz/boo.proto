@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package bar.baz.boo;
+
+service Boo {
+  rpc Get(GetRequest) returns (GetResponse);
+  rpc Set(SetRequest) returns (SetResponse);
+}
+
+message GetRequest {}
+message GetResponse {}
+
+message SetRequest {}
+message SetResponse {}
+
+message Moo {
+  message Coo {
+    message Doo {
+      enum VeryDeep {
+        VERY_DEEP_UNKNOWN = 0;
+        VERY_DEEP_KNOWN = 1;
+      }
+      VeryDeep field = 1;
+    }
+    enum LessDeeper {
+      LESS_DEEPER_UNKNOWN = 0;
+      LESS_DEEPER_KNOWN = 1;
+    }
+  }
+
+  message Goo {}
+}
+
+enum DeepEnum {
+  DEEP_ENUM_UNKNOWN = 0;
+  DEEP_ENUM_KNOWN = 1;
+}
