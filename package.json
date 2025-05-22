@@ -1,7 +1,7 @@
 {
   "name": "faster-pbts",
   "version": "1.0.0",
-  "description": "",
+  "description": "A faster alternative to protobuf.js pbts CLI tool",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc",
