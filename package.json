@@ -15,7 +15,7 @@
     "faster-pbts": "bin/faster-pbts"
   },
   "author": "Oleg Dashevskii",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@ohm-js/cli": "^2.0.0",
     "@types/minimist": "^1.2.5",
