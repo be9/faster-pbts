@@ -39,5 +39,8 @@
   "prettier": {
     "singleQuote": true,
     "printWidth": 120
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
