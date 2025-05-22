@@ -1,6 +1,6 @@
 {
   "name": "faster-pbts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A faster alternative to protobuf.js pbts CLI tool",
   "main": "build/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "format": "prettier -w src package.json tsconfig.json"
   },
   "bin": {
-    "faster-pbts": "build/index.js"
+    "faster-pbts": "bin/faster-pbts"
   },
   "author": "Oleg Dashevskii",
   "license": "ISC",
